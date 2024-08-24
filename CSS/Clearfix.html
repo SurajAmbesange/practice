@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        div{
+            border: 2px solid green;
+            padding: 5px;
+        }
         .img1{
             float: right;
         }
         .img2{
             float: right;
         }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
     </style>
 </head>
 <body>
     <h2>Without clearfix</h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, temporibus? Officiis molestiae possimus officia, amet nihil saepe temporibus ducimus quibusdam repellendus expedita quidem aperiam enim tempora eligendi optio modi esse!</p>
+    <div>
     <img class="img1" src="Suraj Photo.png" alt="" width="170px" height="200px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, eaque. Sequi dolorum adipisci beatae eaque quidem expedita repudiandae aperiam quae.
+    </div>
     <h2>With clearfix</h2>
-    <img class="img2" src="Suraj Photo.png" alt="" width="170px" height="200px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, eaque. Sequi dolorum adipisci beatae eaque quidem expedita repudiandae aperiam quae.
-</body>
+    <div class="clearfix">
+        <img class="img2" src="Suraj Photo.png" alt="" width="170px" height="200px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, eaque. Sequi dolorum adipisci beatae eaque quidem expedita repudiandae aperiam quae.
+    </div>
+    </body>
 </html>
