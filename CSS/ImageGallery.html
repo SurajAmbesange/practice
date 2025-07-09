@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 200px;
+        }
+        .gallery:hover{
+            border: 1px solid black;
+        }
+        .gallery img{
+            width: 100%;
+            height: auto;
+        }
+        .desc{
+            text-align: center;
+            padding: 15px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .responsive{
+            padding: 0 6px;
+            width: 24.99%;
+            float: left;
+        }
+        @media only screen and (max-width:700px){
+           .responsive{ 
+            width: 49.99%;
+            margin: 6px 0;
+        } 
+        }
+        .clearfix{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <a href="Suraj Photo.png">
+            <img src="Suraj Photo.png" width="400px" height="500px" alt="" srcset="">
+        </a>
+        <div class="desc">Suraj Ambesange</div>
+    </div>
+    <div class="gallery">
+        <a href="Suraj Photo.png">
+            <img src="Suraj Photo.png" width="400px" height="500px" alt="" srcset="">
+        </a>
+        <div class="desc">Suraj Ambesange</div>
+    </div>
+    <div class="gallery">
+        <a href="Suraj Photo.png">
+            <img src="Suraj Photo.png" width="400px" height="500px" alt="" srcset="">
+        </a>
+        <div class="desc">Suraj Ambesange</div>
+    </div>
+    <div class="gallery">
+        <a href="Suraj Photo.png">
+            <img src="Suraj Photo.png" width="400px" height="500px" alt="" srcset="">
+        </a>
+        <div class="desc">Suraj Ambesange</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .desc{
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dropdown Image</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non labore dolorum perferendis dolores error beatae sed voluptates provident fugiat nemo unde facilis amet eligendi qui, suscipit eveniet? Culpa, facere.</p>
+    <div class="dropdown">
+        <img src="Suraj Photo.png" alt="Suraj Image" width="100px" height="100px" srcset="">
+    <div class="dropdown-content">
+        <img src="Suraj Photo.png" alt="" srcset="" width="400px" height="300px">
+        <div class="desc">Suraj Ambesange</div>
+    </div>
+    </div>
+</body> 
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #ccc;
+            border-radius: 4px;
+            padding: 12px;
+        }
+        input[type=text], select, textarea{
+            padding: 12px;
+            border: 1px solid #04AA6D;
+            border-radius: 4px;
+            resize: vertical;
+            width: 100%;
+        }
+        label{
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        .col-25{
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        .col-75{
+            width: 75%;
+            float: left;
+            margin-top: 6px;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        input[type=submit]{
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Contct Form</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ut tenetur dolor deserunt nobis, temporibus veniam blanditiis molestiae. Inventore, dolorem ipsa aliquam praesentium laborum fuga quis qui officiis eveniet cupiditate.</p>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" placeholder="Your Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" placeholder="Your Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Country</label>
+                </div>
+                <div class="col-75">
+                   <select name="" id="">
+                    <option value="">India</option>
+                    <option value="">USA</option>
+                    <option value="">Dubai</option>
+                   </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea name="" id="" style="height: 150px;">Write here</textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" name="" id="">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            padding: 20px;
+            background-color: #ccc;
+            text-align: center;
+        }
+        .navbar a{
+            padding: 12px 20px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            float: left;
+            color: white;
+        }
+        .navbar{
+            background-color: black;
+            overflow: hidden;
+        }
+        .navbar a:hover{
+            background-color: white;
+            color: black;
+        }
+        .column{
+            float: left;
+            padding: 10px;
+        }
+        .column.side{
+            width: 25%;
+        }
+        .column.middle{
+            width: 50%;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Header</h2>
+    </div>
+    <div class="navbar">
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h2>Heading 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, modi repellat. Blanditiis possimus voluptatem est ea corrupti facere distinctio cupiditate, sunt quo, illum nemo eveniet impedit maiores, iusto numquam obcaecati!</p>
+        </div>
+
+        <div class="column middle">
+            <h2>Hedaing 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quo nostrum beatae voluptas distinctio architecto sit dolor nobis officiis aliquam reiciendis praesentium suscipit eius minima dicta mollitia, facilis a voluptatum porro, placeat nihil. Quasi unde pariatur, quos magni quaerat nulla voluptatum accusamus perspiciatis iusto veritatis excepturi amet quia animi natus inventore optio iste, quae alias. Optio enim non reiciendis facilis, impedit dolor sapiente saepe similique numquam molestiae nobis id eum incidunt provident fugit, laudantium doloremque quaerat modi ut quasi. Incidunt nobis ducimus architecto nemo quod iste consectetur, vitae similique alias eligendi, harum minus suscipit ipsum nulla expedita exercitationem ipsa? Voluptas.</p>
+        </div>
+        <div class="column side">
+            <h2>Heding 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio architecto minima natus non accusantium tempora. Officia architecto nihil labore facere perferendis nesciunt, saepe assumenda qui voluptatum ullam animi alias tenetur.</p>
+        </div>
+    </div>
+</body>
+</html>

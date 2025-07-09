@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropbtn{
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            padding: 16px;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            background-color: #f9f9f9;
+            position: absolute;
+            min-width: 160px;
+        }
+        .dropdown-content a{
+            color: black;
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover{background-color: #f1f1f1;}
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown:hover .dropbtn{background-color: #3e8e41;}
+    </style>
+</head>
+<body>
+    <h2>Dropdown Button</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aperiam? Eum porro et impedit. Sed hic voluptatibus, tenetur perspiciatis rem blanditiis et alias provident necessitatibus aperiam fugit, fugiat consequuntur quos.</p>
+    <div class="dropdown">
+        <button class="dropbtn">Click me</button>
+        <div class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</body>
+</html>
